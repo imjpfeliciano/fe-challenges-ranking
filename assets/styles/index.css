@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass:400,700");
+body {
+  height: 90vh;
+  background-color: hsl(216deg, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-container {
+  display: none;
+  width: 50%;
+  background-color: hsl(213deg, 16%, 15%);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.card-container.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container .image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container .image-container img {
+  height: 80px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.card-container .image-container .selection {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(213deg, 19%, 18%);
+  padding: 0.5rem 0.75rem;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+}
+.card-container .header {
+  display: flex;
+  width: 100%;
+}
+.card-container .header .star-container {
+  background-color: hsl(213deg, 19%, 18%);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.card-container .content.center {
+  text-align: center;
+}
+.card-container .content .title {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1rem;
+}
+.card-container .content .description {
+  color: hsl(217deg, 12%, 63%);
+  font-size: 0.85rem;
+}
+.card-container .rank-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card-container .rank-container .rank-item {
+  background-color: hsl(213deg, 19%, 18%);
+  border: 0;
+  color: hsl(217deg, 12%, 63%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.card-container .rank-container .rank-item.selected {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.card-container .rank-container .rank-item:hover {
+  background-color: hsl(216deg, 12%, 54%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+.card-container .footer {
+  width: 100%;
+}
+
+.primary-btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: hsl(25deg, 97%, 53%);
+  border: 0;
+  width: 100%;
+  padding: 0.75rem 0;
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 25px;
+}
+.primary-btn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+.primary-btn:hover:not(:disabled) {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+  cursor: pointer;
+}
+
+.attribution {
+  color: hsl(0deg, 0%, 100%);
+  position: absolute;
+  bottom: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=index.css.map */
